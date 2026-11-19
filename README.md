@@ -1,2 +1,2 @@
 # forest-canopy-loss-s2
-Detecting and forecasting forest canopy loss in Frankenwald (Bavaria) with Sentinel-2
+Early warning of forest canopy loss in the Frankenwald (Bavaria) from Sentinel-1/2 time series.
