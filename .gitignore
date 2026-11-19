@@ -218,3 +218,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Project-specific ---
+# Data and outputs stay out of git (use Kaggle Datasets)
+data/
+outputs/
+*.tif
+*.tiff
+*.zarr/
+*.nc
+mlruns/
+.DS_Store

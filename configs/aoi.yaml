@@ -1,0 +1,22 @@
+# Area of interest and time range.
+# Starting window (~20 x 20 km) centred near 11.45 E / 50.35 N (Frankenwald).
+# To be adjusted in step 2 after looking at the FCCL loss map.
+name: frankenwald
+bbox: [11.31, 50.26, 11.59, 50.44]   # [min_lon, min_lat, max_lon, max_lat], EPSG:4326
+crs_out: null                         # filled in step 2: use the CRS of the FCCL label raster
+resolution_m: 10
+
+time:
+  start: "2017-04-01"
+  end: "2024-10-31"
+  season_months: [4, 5, 6, 7, 8, 9, 10]   # monthly composites Apr-Oct
+  summer_months: [6, 7, 8]                # yearly summer composite
+
+sentinel2:
+  collection: sentinel-2-l2a
+  max_cloud_cover: 60
+  scl_mask_classes: [3, 8, 9, 10, 11]     # shadow, cloud medium/high, cirrus, snow
+
+sentinel1:
+  collection: sentinel-1-rtc
+  polarisations: [vv, vh]
